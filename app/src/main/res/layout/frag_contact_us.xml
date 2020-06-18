@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ContactUs.FragContactUs"
+    >
+    <!--header-->
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="تماس با ما"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/ic_back" />
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/txtTitle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relHeader"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="تلفن های گروه نرم افزاری میلیونر"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="051-37606798"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="051-37606799"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="051-37617775"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--center-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearCenter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_below="@id/linearPhone"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_border_white"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GulH25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.25"
+            android:orientation="horizontal"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GulH50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.50"
+            android:orientation="horizontal"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GulH75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.75"
+            android:orientation="horizontal"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GulH100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="1"
+            android:orientation="horizontal"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GulV50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.50"
+            android:orientation="vertical"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/colorText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/GulV50"
+            app:layout_constraintRight_toRightOf="@id/GulV50"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@color/colorText"
+            app:layout_constraintTop_toTopOf="@id/GulH25"
+            app:layout_constraintBottom_toBottomOf="@id/GulH25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@color/colorText"
+            app:layout_constraintTop_toTopOf="@id/GulH50"
+            app:layout_constraintBottom_toBottomOf="@id/GulH50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@color/colorText"
+            app:layout_constraintTop_toTopOf="@id/GulH75"
+            app:layout_constraintBottom_toBottomOf="@id/GulH75"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@color/colorText"
+            app:layout_constraintTop_toTopOf="@id/GulH100"
+            app:layout_constraintBottom_toBottomOf="@id/GulH100"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <TextView
+            android:id="@+id/lblSupport"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="داخلی 1"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/GulH25"
+            app:layout_constraintLeft_toLeftOf="@id/GulV50"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="واحد پشتیبانی میلیونر"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/GulH25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/GulV50"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="داخلی 2"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@id/GulH25"
+            app:layout_constraintBottom_toBottomOf="@id/GulH50"
+            app:layout_constraintLeft_toLeftOf="@id/GulV50"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="واحد فروش میلیونر"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@id/GulH25"
+            app:layout_constraintBottom_toBottomOf="@id/GulH50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/GulV50"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="داخلی 4"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@id/GulH50"
+            app:layout_constraintBottom_toBottomOf="@id/GulH75"
+            app:layout_constraintLeft_toLeftOf="@id/GulV50"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="واحد مالی میلیونر"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@id/GulH50"
+            app:layout_constraintBottom_toBottomOf="@id/GulH75"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/GulV50"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="داخلی 7"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@id/GulH75"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/GulV50"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="واحد انتقادات و پیشنهادات "
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@id/GulH75"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/GulV50"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearCenter"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="تلفن اضطراری واحد پشتیبانی میلیونر"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="09159029664"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="تلفن اضطراری واحد فروش میلیونر"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="09155009664"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="آدرس دفتر مرکزی"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="مشهد-بلواردستغیب-بین دستغیب 35 و 37 -ساختمان 444 طبقه 5 واحد 15"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="www.softmiliac.com"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:layout_below="@id/relContent"
+            />
+    </LinearLayout>
+</RelativeLayout>

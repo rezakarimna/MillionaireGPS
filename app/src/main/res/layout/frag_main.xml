@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/txtNameUser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ftydtdtydtyd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameUser">
+
+        <!--دکمه لیست وزیتورها-->
+        <RelativeLayout
+            android:id="@+id/relBtnGpsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/shape_btn_green"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtBtnGpsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="ردیابی"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgBtnListVisitor"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/ic_gps" />
+
+        </RelativeLayout>
+        <!--دکمه تماس با میلیونر-->
+        <RelativeLayout
+            android:id="@+id/relBtnContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/shape_btn_sorati">
+
+            <TextView
+                android:id="@+id/txtBtnContactUs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="تماس با میلیونر"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"  />
+
+            <ImageView
+                android:id="@+id/imgBtnContactUs"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/logo" />
+
+        </RelativeLayout>
+        <!--دکمه درباره میلیونر-->
+        <RelativeLayout
+            android:id="@+id/relBtnAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/shape_btn_sorati">
+
+            <TextView
+                android:id="@+id/txtBtnAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="تماس با میلیونر"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"  />
+
+            <ImageView
+                android:id="@+id/imgBtnAboutUs"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/logo" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

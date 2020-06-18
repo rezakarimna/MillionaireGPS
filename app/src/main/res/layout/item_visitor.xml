@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relMainProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:paddingRight="@dimen/_5sdp">
+    <!--ایتم نمایش مضخصات وزیتور-->
+    <RelativeLayout
+        android:id="@+id/relVisitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="@drawable/shape_dark_white_stoke_white"
+        android:paddingBottom="@dimen/_5sdp"
+        android:visibility="visible">
+        <!--    &lt;!&ndash;عکس ویزیتور&ndash;&gt;
+            <ImageView
+                android:id="@+id/imgVisitor"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_115sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/no_photo" />-->
+        <!--مشخصات ویزیتور-->
+        <RelativeLayout
+            android:id="@+id/linearContentProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--نام وزیتوری-->
+            <RelativeLayout
+                android:id="@+id/relVisitorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/txtVisitorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_toLeftOf="@+id/lblVisitorName"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:text="وزیتور میلیونر" />
+
+                <TextView
+                    android:id="@+id/lblVisitorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_toLeftOf="@+id/imgVisitorName"
+                    android:gravity="center"
+                    android:text="نام وزیتور:"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgVisitorName"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_person" />
+
+            </RelativeLayout>
+            <!--کد ویزیتور-->
+            <RelativeLayout
+                android:id="@+id/relVisitorCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relVisitorName"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+
+                <TextView
+                    android:id="@+id/txtVisitorCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_toLeftOf="@+id/lblVisitorCode"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:text="1071001" />
+
+                <TextView
+                    android:id="@+id/lblVisitorCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_toLeftOf="@+id/imgVisitorCode"
+                    android:gravity="center"
+                    android:text="کد وزیتور:"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgVisitorCode"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_person" />
+
+            </RelativeLayout>
+            <!--شماره همراه وزیتوری-->
+           <!-- <RelativeLayout
+                android:id="@+id/relVisitorMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relVisitorCode"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txtVisitorMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_toLeftOf="@+id/lblVisitorMobile"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:text="09158972536" />
+
+                <TextView
+                    android:id="@+id/lblVisitorMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_toLeftOf="@+id/imgVisitorMobile"
+                    android:gravity="center"
+                    android:text="شماره همراه:"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgVisitorMobile"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_phone_android" />
+
+            </RelativeLayout>-->
+            <!--مکان لحظه ای ویزیتور-->
+            <RelativeLayout
+                android:id="@+id/relBtnVisitorLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/relVisitorCode"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/shape_btn_green"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtBtnListVisitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="مکان لحظه ای ویزیتور"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgBtnListVisitor"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_location" />
+
+            </RelativeLayout>
+            <!--تاریخچه ویزیتور-->
+            <RelativeLayout
+                android:id="@+id/relBtnLocationHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relBtnVisitorLocation"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/shape_btn_green">
+
+                <TextView
+                    android:id="@+id/txtBtnListVisitorHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:text="تاریخچه وزیتور"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgBtnListVisitorHistory"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_date" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constShowHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_below="@+id/txtBtnListVisitorHistory"
+                    android:visibility="gone"
+                    >
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/gulV50History"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/gulH50History"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.7" />
+                    <!--از تاریخ-->
+                    <RelativeLayout
+                        android:id="@+id/relAsDate"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:padding="@dimen/_10sdp"
+                        app:layout_constraintBottom_toTopOf="@id/gulH50History"
+                        app:layout_constraintLeft_toLeftOf="@id/gulV50History"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/txtAsDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_below="@+id/lblAsDate"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            tools:text="1399/03/03" />
+
+                        <TextView
+                            android:id="@+id/lblAsDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:text="از تاریخ:"
+                            android:textColor="@color/colorGrayWhite"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                    <!--تا تاریخ-->
+                    <RelativeLayout
+                        android:id="@+id/relToDate"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:padding="@dimen/_10sdp"
+                        app:layout_constraintBottom_toTopOf="@id/gulH50History"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="@id/gulV50History"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/txtToDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_below="@+id/lblToDate"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            tools:text="1399/03/03" />
+
+                        <TextView
+                            android:id="@+id/lblToDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:text="تا تاریخ:"
+                            android:textColor="@color/colorGrayWhite"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/txtShowLocationH"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="@id/gulH50History"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="مشاهده"
+                        android:background="@drawable/shape_btn_red"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

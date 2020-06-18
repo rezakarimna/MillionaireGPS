@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ListVisitor.ListVisitorFragment">
+    <!--هدر-->
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="لیست وزیتورها"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@id/txtTitle"
+            android:src="@drawable/ic_visit" />
+        <!--نام مشتری-->
+        <RelativeLayout
+            android:id="@+id/relSearchVisitorName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/shape_radius_input"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_8sdp"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/editSearchVisitorName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:gravity="right|center_vertical"
+                android:hint="جستجو بر اساس نام وزیتور"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorGrayWhite"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relHeader"
+        android:id="@+id/swipeRefresh">
+    <!--ریسایکلرویو لیست وزیتوری-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recVisitorList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relHeader" />
+    <ProgressBar
+        android:id="@+id/progCircel"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <!--لایوت لیست خالی-->
+    <RelativeLayout
+        android:id="@+id/relError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="پیامی وجود ندارد"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

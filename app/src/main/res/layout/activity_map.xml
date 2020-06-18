@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Maps.MapActivity">
+    <!--نام وزیتوری-->
+    <RelativeLayout
+        android:id="@+id/relVisitorName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_dark_white_stoke_white">
+        <ImageView
+            android:id="@+id/imgVisitorName"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:src="@drawable/ic_person" />
+        <TextView
+            android:id="@+id/lblVisitorName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgVisitorName"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:text="نام ویزیتور:" />
+        <TextView
+            android:id="@+id/txtVisitorName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/lblVisitorName"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            tools:text="وزیتور میلیونر" />
+
+
+
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+
+</LinearLayout>

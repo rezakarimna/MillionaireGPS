@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minWidth="@dimen/_380sdp"
+    android:background="@color/colorPrimary"
+    tools:context=".AboutUs.FragAboutUs">
+
+<!--درباره شرکت میلیونر-->
+    <LinearLayout
+        android:id="@+id/relContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_below="@+id/relHeader"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:background="@drawable/shape_white"
+        android:layout_marginBottom="@dimen/_40sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            >
+
+            <!--صفحه اصلی-->
+            <LinearLayout
+                android:id="@+id/relHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Millionaire"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="گروه نرم افزار میلیونر ارائه دهنده انواع راهکارهای نرم افزار و سخت افزار می باشد از این رو فعالیت های اصلی میلیونر به شرح زیر می باشد"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+            <!--سبد خرید-->
+            <RelativeLayout
+                android:id="@+id/relShoppingBasket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imgShoppingBasket"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/txtShoppingBasket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_toLeftOf="@id/imgShoppingBasket"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="ارائه راهکارهای نرم افزاری بر پایه گردش عملیاتی سازمان های تازه تاسیس تا سازمان های بزرگ در تمامی صنایع مادر ، تولیدی ، خدماتی و بازرگانی"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+            <!--لیست فاکتورها-->
+            <RelativeLayout
+                android:id="@+id/relFactorList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imgFactorList"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/txtFactorList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_toLeftOf="@id/imgFactorList"
+                    android:gravity="center"
+                    android:text="ارائه نرم افزاری تخصصی متناسب با صنایع ، سازمان ها و ادارت دولتی"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+            <!--صورت حساب-->
+            <RelativeLayout
+                android:id="@+id/relBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgBill"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/txtBill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_toLeftOf="@id/imgBill"
+                    android:gravity="right|center_vertical"
+                    android:text="ارائه راهکارهای خاص راه اندازی باشگاه مشتریان و crm"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+            <!--جوایز-->
+            <RelativeLayout
+                android:id="@+id/relPrize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relHome"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imgPrize"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/txtPrize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgPrize"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:gravity="right|center_vertical"
+                    android:text="ارائه راهکارهای خاص شرکت های پخش و توزیع مویرگی"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+            <!-- قرعه کشی-->
+            <RelativeLayout
+            android:id="@+id/relLottery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/imgLottery"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/circle_red" />
+
+            <TextView
+                android:id="@+id/txtLottery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/imgLottery"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:text="ارائه خدمات آموزش ، استفرار ، پشتیبانی و بروز رسانی نرم افزاری"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imgLottery2"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/txtLottery2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgLottery2"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:text="راهکارهای خاص بر پایه وب سایت های فروشگاهی و اپلیکیشن های اندرویدی"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imgLottery3"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/txtLottery3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgLottery3"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:text="تامین کننده تجهیزات فروشگاهی و اداری"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+            <!--امتیازات-->
+            <RelativeLayout
+                android:id="@+id/relPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/imgPoints"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/txtPoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_toLeftOf="@id/imgPoints"
+                    android:gravity="right|center_vertical"
+                    android:text="ارائه فناوری بر پایه RFID"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--لوگو شرکت میلیونر-->
+    <FrameLayout
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relHeader"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:text="درباره شرکت میلیونر"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
